@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int n,rem,sum=0,temp=0;
+printf("enter values of n");
+scanf("%d",&n);
+temp=n;
+while(n!=0)
+{
+  rem=n%10;
+  sum=sum+(rem*rem*rem);
+  n=n/10;
+}
+if(temp==sum)
+{
+printf("given %d is armstrong no.",sum);
+}
+else
+{
+printf("not a armstrong no.");
+}
+
+}
